@@ -30,7 +30,7 @@ install_themes() {
 	fi
 	if [[ -f "$PDIR/launch.sh" ]]; then
 		rm -r $PDIR/fonts 
-	       	rm $DIR/setup.sh	
+	       	rm $PDIR/setup.sh	
 		echo -e "[*] Successfully Installed.\n"
 		exit 0
 	else
