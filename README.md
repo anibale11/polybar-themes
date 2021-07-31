@@ -8,13 +8,14 @@
 
 1. Repository Clone
 
-git clone https://github.com/anibale11/polybar-themes.git`
+`git clone https://github.com/anibale11/polybar-themes.git`
 
 2. execute permission
 
 `cd polybar-themes ; chmod +x setup.sh`
 
 3. install
+
 `./setup.sh`
 
 > If you error detected, create issue on this repository
