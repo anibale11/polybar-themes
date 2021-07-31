@@ -7,11 +7,12 @@
 ## Install on Ubuntu
 
 1. Repository Clone
-`git clone https://github.com/anibale11/polybar-themes.git`
+
+git clone https://github.com/anibale11/polybar-themes.git`
 
 2. execute permission
-a. `cd polybar-themes`
-b. `chmod +x setup.sh`
+
+`cd polybar-themes ; chmod +x setup.sh`
 
 3. install
 `./setup.sh`
