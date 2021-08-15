@@ -1,4 +1,5 @@
 #!/bin/bash
+
 while true; do
 	porcentage=`cat /sys/class/power_supply/BAT0/capacity`
 	if (( $porcentage < 20 )); then

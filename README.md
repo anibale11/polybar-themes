@@ -18,4 +18,12 @@
 
 `./setup.sh`
 
+4. launch normal or randomi
+
+`bash ~/.config/polubar/launch.sh --theme `
+
+or
+ 
+`bash ~/.config/polubar/launch-random.sh ` 
+
 > If you error detected, create issue on this repository
