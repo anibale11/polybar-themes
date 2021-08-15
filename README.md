@@ -18,7 +18,7 @@
 
 `./setup.sh`
 
-4. launch normal or randomi
+4. launch normal or random
 
 `bash ~/.config/polubar/launch.sh --theme `
 
