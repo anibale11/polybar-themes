@@ -2,6 +2,7 @@
 
 dir="$HOME/.config/polybar"
 themes=(`ls --hide="launch.sh" $dir`)
+monitors=(`polybar -m | cut -d ':' -f 1 | wc -l`)
 
 launch_bar() {
 	# Terminate already running bar instances
@@ -9,15 +10,18 @@ launch_bar() {
 
 	# Wait until the processes have been shut down
 	while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-
 	# Launch the bar
 	if [[ "$style" == "hack" || "$style" == "cuts" ]]; then
-		polybar -q top -c "$dir/$style/config.ini" &
-		polybar -q bottom -c "$dir/$style/config.ini" &
+		for m in $(polybar --list-monitors | cut -d":" -f1); do
+    			MONITOR=$m polybar -q top -c "$dir/$style/config.ini" &
+			MONITOR=$m polybar -q bottom -c "$dir/$style/config.ini" &
+		done
 	elif [[ "$style" == "pwidgets" ]]; then
 		bash "$dir"/pwidgets/launch.sh --main
 	else
-		polybar -q main -c "$dir/$style/config.ini" &	
+		for m in $(polybar --list-monitors | cut -d":" -f1); do
+    			MONITOR=$m polybar -q main -c "$dir/$style/config.ini" &
+		done
 	fi
 }
 
