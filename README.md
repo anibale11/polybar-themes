@@ -27,4 +27,6 @@ or random themes
 `bash ~/.config/polybar/launch.sh --random `
 
 > themes: blocks docky grayblocks material shapes colorblocks fonts hack panels cuts forest shade
+
+
 > If you error detected, create issue on this repository
