@@ -3,10 +3,19 @@
 > Inspirated by Aditya Shakyai
 
 - Original themes https://github.com/adi1090x/polybar-themes
+### Dependencies
 
-## Install on Ubuntu
+Install following programs on your system before you use these themes.
 
-1. Repository Clone
+- **`Polybar`** : Ofcourse, the bar itself
+- **`Rofi`** : For App launcher, network, power and style menus
+- **`pywal`** : For pywal support
+- **`calc`** : For random colors support
+- **`networkmanager_dmenu`** : For network modules
+
+### Install on Ubuntu
+
+1. Clone this repository
 
 `git clone https://github.com/anibale11/polybar-themes.git`
 
@@ -26,7 +35,7 @@ or random themes
  
 `bash ~/.config/polybar/launch.sh --random `
 
-> themes: blocks docky grayblocks material shapes colorblocks fonts hack panels cuts forest shade
+> themes list: blocks docky grayblocks material shapes colorblocks fonts hack panels cuts forest shade
 
 
-> If you error detected, create issue on this repository
+> If you error detected, create a issue
