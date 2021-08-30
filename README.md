@@ -18,13 +18,13 @@
 
 `./setup.sh`
 
-4. launch normal or random
+4. launch normal
 
 `bash ~/.config/polybar/launch.sh --theme `
 
-or
+or random themes
  
 `bash ~/.config/polybar/launch.sh --random `
 
-
+> themes: blocks docky grayblocks material shapes colorblocks fonts hack panels cuts forest shade
 > If you error detected, create issue on this repository
