@@ -20,10 +20,10 @@
 
 4. launch normal or random
 
-`bash ~/.config/polubar/launch.sh --theme `
+`bash ~/.config/polybar/launch.sh --theme `
 
 or
  
-`bash ~/.config/polubar/launch-random.sh ` 
+`bash ~/.config/polybar/launch-random.sh ` 
 
 > If you error detected, create issue on this repository
