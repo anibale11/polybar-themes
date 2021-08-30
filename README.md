@@ -24,6 +24,7 @@
 
 or
  
-`bash ~/.config/polybar/launch-random.sh ` 
+`bash ~/.config/polybar/launch.sh --random `
+
 
 > If you error detected, create issue on this repository
