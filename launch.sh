@@ -16,8 +16,6 @@ launch_bar() {
     			MONITOR=$m polybar -q top -c "$dir/$style/config.ini" &
 			MONITOR=$m polybar -q bottom -c "$dir/$style/config.ini" &
 		done
-	elif [[ "$style" == "pwidgets" ]]; then
-		bash "$dir"/pwidgets/launch.sh --main
 	else
 		for m in $(polybar --list-monitors | cut -d":" -f1); do
     			MONITOR=$m polybar -q main -c "$dir/$style/config.ini" &
@@ -65,14 +63,12 @@ elif [[ "$1" == "--forest" ]]; then
 	style="forest"
 	launch_bar
 
-elif [[ "$1" == "--pwidgets" ]]; then
-	style="pwidgets"
-	launch_bar
-
 elif [[ "$1" == "--panels" ]]; then
 	style="panels"
 	launch_bar
 
+elif [[ "$1" == "--random" ]]; then
+	bash $dir/scripts/random-themes.sh
 else
 	cat <<- EOF
 	Usage : launch.sh --theme
@@ -80,6 +76,6 @@ else
 	Available Themes :
 	--blocks    --colorblocks    --cuts      --docky
 	--forest    --grayblocks     --hack      --material
-	--panels    --pwidgets       --shades    --shapes
+	--panels    --shades	     --shapes	 --random
 	EOF
 fi
