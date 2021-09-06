@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
+wallpapers_dir="$HOME/DATA/Imágenes/background/got/*"
 dir="$HOME/.config/polybar"
 themes=(`ls --hide="launch.sh" $dir`)
 monitors=(`polybar -m | cut -d ':' -f 1 | wc -l`)
+
+killall feh
+feh --randomize --bg-scale $wallpapers_dir
 
 launch_bar() {
 	# Terminate already running bar instances

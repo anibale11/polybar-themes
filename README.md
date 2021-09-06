@@ -12,6 +12,7 @@ Install following programs on your system before you use these themes.
 - **`pywal`** : For pywal support
 - **`calc`** : For random colors support
 - **`networkmanager_dmenu`** : For network modules
+- **`feh`** wallpapers
 
 ### Install on Ubuntu
 
@@ -35,7 +36,8 @@ or random themes
  
 `bash ~/.config/polybar/launch.sh --random `
 
-> themes list: blocks docky grayblocks material shapes colorblocks fonts hack panels cuts forest shade
+> Themes list: blocks docky grayblocks material shapes colorblocks fonts hack panels cuts forest shade
 
+> Wallpapers: Edit wallpapers directory in launch.sh
 
 > If you error detected, create a issue

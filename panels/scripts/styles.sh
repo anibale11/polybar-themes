@@ -7,7 +7,7 @@ change_panel() {
 	cat "$DIR"/panel/"${panel}.ini" > "$DIR"/config.ini
 
 	# Change wallpaper
-	feh --bg-fill "$DIR"/wallpapers/"$bg"
+	#feh --bg-fill "$DIR"/wallpapers/"$bg"
 	
 	# Restarting polybar
 	polybar-msg cmd restart
