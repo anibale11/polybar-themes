@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wallpapers_dir="$HOME/DATA/Imágenes/background/got/*"
+wallpapers_dir="/media/anibale/DATA/Imágenes/background/got/*"
 dir="$HOME/.config/polybar"
 themes=(`ls --hide="launch.sh" $dir`)
 monitors=(`polybar -m | cut -d ':' -f 1 | wc -l`)
